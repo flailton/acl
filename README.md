@@ -1,3 +1,5 @@
+<p align="center"><a href="https://angular.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="400"></a></p>
+
 # Access Control List (Front-end)
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) varsão 11.0.1.
