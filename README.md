@@ -1,4 +1,4 @@
-<p align="center"><a href="https://angular.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="400"></a></p>
+<p align="center"><a href="https://angular.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" width="200"></a></p>
 
 # Access Control List (Front-end)
 
