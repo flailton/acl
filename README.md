@@ -52,7 +52,7 @@ RF3: Deve ser possível gerenciar as Permissões de cada Função, conforme as p
 
 ## Requisitos Não Funcionais (RNF)
 
-Requisitos funcionais, caracterizam exigências da aplicação que devem ser atendidas através de suas funcionalidades.
+Requisitos não funcionais, caracterizam exigências do sistema que afetam o seu comportamento, sua arquitetura, tecnologias etc. E não estão necessariamente ligadas a funcionalidades do sistema.
 
 RNF1: O front-end e o back-end do sistema devem estar desacoplados, divididos entre uma API REST e uma outra aplicação, responsável pelo front-end, que irá consumir a API.
 
