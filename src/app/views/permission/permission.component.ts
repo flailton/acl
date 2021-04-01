@@ -36,7 +36,7 @@ export class PermissionComponent implements OnInit {
       this.roles = data;
     },
     error => {
-      alert(error.erros.join('<br/>'));
+      alert(error.errors.join('<br/>'));
       this.router.navigate(['users']);
     });
   }
@@ -45,6 +45,11 @@ export class PermissionComponent implements OnInit {
     this.requestPermission.actions = actions;
     this.userService.hasPermission(this.requestPermission).subscribe(data => {
       this.permissions = data;
+
+      if(!this.permissions['update']){
+        alert('O usuário não possui permissão!');
+        this.router.navigate(['users']);
+      }
     });
   }
 

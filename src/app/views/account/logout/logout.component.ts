@@ -27,11 +27,11 @@ export class LogoutComponent implements OnInit {
       alert('Logout realizado com Sucesso!');
 
       setTimeout(() => {
-        window.location.reload(); 
+        this.router.navigate(['login']);
       }, 500);
     },
     error => {
-      alert(error.error.errors.join('<br/>'));
+      alert(error.errors.join('<br/>'));
     });
   }
 
