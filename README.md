@@ -43,7 +43,9 @@ Ao realizar o login o usuário será redirecionado, de acordo com a sua função
 Requisitos funcionais, caracterizam exigências da aplicação que devem ser atendidas através de suas funcionalidades.
 
 RF1: Deve ser possível a visualização, edição, criação e exclusão de Usuários, conforme as permissões atualmente definidas.
+
 RF2: O sistema deve restringir o acesso do Usuário a funcionalidades não definidas nas permissões de sua Função.
+
 RF3: Deve ser possível gerenciar as Permissões de cada Função, conforme as permissões atualmente definidas.
 
 ## Requisitos Não Funcionais (RNF)
@@ -51,5 +53,7 @@ RF3: Deve ser possível gerenciar as Permissões de cada Função, conforme as p
 Requisitos funcionais, caracterizam exigências da aplicação que devem ser atendidas através de suas funcionalidades.
 
 RNF1: O front-end e o back-end do sistema devem estar desacoplados, divididos entre uma API REST e uma outra aplicação, responsável pelo front-end, que irá consumir a API.
+
 RNF2: O back-end deve ser desenvolvido em PHP (7.x >), sendo opcional o uso de algum framework.
+
 RNF3: O sistema deve garantir a segurança dos dados, exigindo autenticação de acesso para utilização.
