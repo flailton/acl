@@ -5,7 +5,12 @@
   "projects": {
     "acl": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineStyle": true,
+          "spec": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,6 +29,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "acl"
+  "defaultProject": "acl",
+  "cli": {
+    "analytics": "3c2d6613-0268-4470-990b-ab72319eb406"
+  }
 }

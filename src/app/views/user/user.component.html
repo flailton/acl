@@ -1,0 +1,41 @@
+<div *ngIf="permissions['index']" class="content text-center" role="main">
+    <h1 class="h3 m-3 font-weight-normal">Lista de Usuários</h1>
+    <table *ngIf="(users != undefined)" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Telefone</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users; let i  = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>
+                <div class="row">
+                    <div *ngIf="permissions['show']" class="table col-md-4">
+                        <a [routerLink]="['/users/show', user.id]" class="text-dark" title="Visualizar usuário">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                    <div *ngIf="permissions['update']" class="table col-md-4">
+                        <a [routerLink]="['/users/edit', user.id]" class="text-dark" title="Editar usuário">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                    <div *ngIf="permissions['destroy']" class="table col-md-4">
+                        <a href="javascript: void(0)" (click)='destroy(user)' class="text-dark" title="Excluir usuário">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-11">
+        <ul class="navbar-nav m-1">
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/users']">Usuários <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/permissions']">Permissões </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-1">
+        <div class="m-1 inline">
+            <button [routerLink]="['/logout']" class="btn btn-link btn-block text-light"
+                type="button">Logout</button>
+        </div>
+    </div>
+</div>

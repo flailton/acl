@@ -1,0 +1,27 @@
+<div *ngIf="permissions['update']" class="content text-center" role="main">
+    <h1 class="h3 m-3 font-weight-normal">Lista de Funções</h1>
+    <table *ngIf="(roles != undefined)" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let role of roles; let i  = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ role.name }}</td>
+            <td>
+                <div class="row">
+                    <div *ngIf="permissions['update']" class="table col">
+                        <a [routerLink]="['/permissions/edit', role.id]" class="text-dark" title="Editar permissões">
+                            <i class="fa fa-lock"></i>
+                        </a>
+                    </div>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

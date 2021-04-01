@@ -1,0 +1,26 @@
+<div *ngIf="(this.user.role_id != undefined)" class="content text-center" role="main">
+    <form class="form-login">
+        <h1 class="h3 m-3 font-weight-normal">Edição de Usuário</h1>
+        <label for="name" class="sr-only">Nome</label>
+        <input type="text" [(ngModel)]="user.name" name="name" class="form-control m-1" placeholder="Nome" required=""
+            autofocus="">
+        <label for="email" class="sr-only">Endereço de E-mail</label>
+        <input type="email" [(ngModel)]="user.email" name="email" class="form-control m-1"
+            placeholder="Endereço de E-mail" required="" autofocus="">
+        <label for="phone" class="sr-only">Telefone</label>
+        <input type="phone" [(ngModel)]="user.phone" name="phone" class="form-control m-1" placeholder="Telefone"
+            required="" autofocus="">
+
+        <label for="selectedRole" class="sr-only">Funções</label>
+        <div [ngSwitch]="roles != undefined">
+            <div *ngSwitchCase="true">
+                <select [(ngModel)]="user.role_id" class="form-select" aria-label="Função" name="role_id">
+                    <option *ngFor="let role of roles" [selected]="role.id == user.roles[0].id"  [value]="role.id">{{ role.name }}</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn btn-link btn-block m-2" type="button" [routerLink]="['/users']">Voltar</button>
+        <button class="btn btn-primary btn-block m-2" (click)="update(user)" type="submit">Salvar</button>
+    </form>
+</div>
