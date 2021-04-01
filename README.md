@@ -30,13 +30,13 @@ O usuário deve inserir o e-mail e a senha nos respectivos campos e se conectar 
 
 Ao realizar o login o usuário será redirecionado, de acordo com a sua função.
 - Usuário
-  O usuário terá acesso a página de visualização de seus dados, além de ter acesso à tela para edição dos seus dados, exceto sua Função.
-  Na tela de Edição, só será permitida a alteração do Nome, E-mail e Telefone. Caso lhe seja dada a permissão de Listar as Funções, ele também poderá alterar a sua Função.
+  - O usuário terá acesso a página de visualização de seus dados, além de ter acesso à tela para edição dos seus dados, exceto sua Função.
+  - Na tela de Edição, só será permitida a alteração do Nome, E-mail e Telefone. Caso lhe seja dada a permissão de Listar as Funções, ele também poderá alterar a sua Função.
   
 - Administrador
-  O usuário terá acesso a página de listagem dos usuários, onde será possível visualizar, editar ou excluir um usuário.
-  Na tela de Edição será permitida a alteração dos campos Nome, E-mail, Telefone e Função.
-  Esta Função terá acesso às Permissões. Lá será exibida a lista de Funções, para que o usuário selecione a qual deseja atualizar as permissões.
+  - O usuário terá acesso a página de listagem dos usuários, onde será possível visualizar, editar ou excluir um usuário.
+  - Na tela de Edição será permitida a alteração dos campos Nome, E-mail, Telefone e Função.
+  - Esta Função terá acesso às Permissões. Lá será exibida a lista de Funções, para que o usuário selecione a qual deseja atualizar as permissões.
 
 ## Requisitos Funcionais (RF)
 
