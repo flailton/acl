@@ -2,7 +2,7 @@
 
 # Access Control List (Front-end)
 
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) varsão 11.0.1.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 11.0.1.
 
 ## Development server
 
